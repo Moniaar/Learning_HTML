@@ -1,0 +1,11 @@
+/* Setting global rules for the website */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Nunito", sans-serif;
+}
+
+/* End of global rules */
