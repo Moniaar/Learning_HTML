@@ -1,0 +1,112 @@
+/* Styles for header */
+header {
+
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+
+    list-style-type: none;
+}
+
+nav ul li {
+
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #333;
+}
+
+.cta-button {
+
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styles for hero section */
+.hero {
+
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Styles for other sections */
+.about, .services, .contact {
+
+    padding: 50px 0;
+}
+
+/* Styles for form */
+form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+button[type="submit"] {
+
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styles for footer */
+footer {
+
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+
+    text-decoration: none;
+    color: #fff;
+}
