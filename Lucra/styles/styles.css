@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px;
 }
 
 /* Styles for header */
@@ -106,10 +106,8 @@ nav ul li.active {
     padding: 50px 0;
     display: flex;
     height: 100vh; /* Adjust height as needed */
-    align-content: space-evenly;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .service-card {
@@ -118,6 +116,10 @@ nav ul li.active {
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Set service card as flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
 }
 
 .service-card h2 {
@@ -126,7 +128,9 @@ nav ul li.active {
 
 .service-card p {
     margin: 0;
+    text-align: center; /* Center text */
 }
+
 
 .contact {
     padding: 25px 0;
@@ -196,17 +200,22 @@ footer ul li a {
 .contact_header {
     text-align: center;
     margin-top: 100px; /* Adjust this value as needed */
-    justify-content: center;
 }
 
 .centered-container {
-    text-align: center; /* To center the image horizontally */
+    justify-content: center;
+    align-items: center; /* To vertically center the content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Styles for contact sections */
 .contact-sections {
     display: flex;
     justify-content: space-around;
+    align-items: center; /* To vertically center the sections */
     margin-top: 50px; /* Adjust as needed */
 }
 
@@ -225,4 +234,70 @@ footer ul li a {
 /* Add space for icons */
 .contact-section p {
     margin-bottom: 20px;
+}
+
+/* Styles for summary section */
+.summary-section {
+    flex: 0 1 calc(50% - 20px);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Set service card as flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.summary-content {
+    vertical-align: middle;
+    flex: 0 1 calc(50% - 20px);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Set service card as flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.summary-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.summary-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styles for service cards section */
+.service-cards {
+    display: table;
+    width: 50%; /* Set width to 50% to display side by side */
+    float: left; /* Float the service cards section to the left */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
+.service-card {
+    display: table-cell;
+    vertical-align: top; /* Align service cards to the top */
+    width: 25%; /* Set width to 25% to display four cards side by side */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.service-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
 }
